@@ -1,0 +1,39 @@
+using System;
+
+class Animal
+{
+    public string name;
+    public string color;
+
+    // Method
+    public void GetParent()
+    {
+        Console.Write("I am an Animal class");
+    }
+}
+
+class Cat : Animal
+{
+    public void GetName()
+    {
+        Console.WriteLine("Cat Name: " + name);
+    }
+
+    public void GetColor()
+    {
+        Console.WriteLine("Cat Color: " + color);
+    }
+}
+
+class Program
+{
+    public static void Main()
+    {
+        Cat c = new Cat();
+        c.name = "Whiskers";
+        c.color = "Gray";
+
+        c.GetName();
+        c.GetColor();
+    }
+}
